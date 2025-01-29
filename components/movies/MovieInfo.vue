@@ -9,7 +9,7 @@ const props = defineProps<{
 
 <template>
   <div v-if="props.movie" class="mb-8">
-    <div class="flex gap-6">
+    <div class="flex flex-col gap-6 md:flex-row">
       <img
         :src="props.movie.image"
         :alt="props.movie.name"
